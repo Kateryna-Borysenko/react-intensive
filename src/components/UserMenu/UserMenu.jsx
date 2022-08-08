@@ -4,8 +4,8 @@ import { connect } from 'react-redux'
 
 const UserMenu = (props) => {
   const activeTodos = () => {
-    props.todos.filter((todo) => !todo.completed)
-    return props.todos.length
+    const activeTodos = props.todos.filter((todo) => !todo.completed)
+    return activeTodos.length
   }
   return (
     <div className={s.wrap}>
