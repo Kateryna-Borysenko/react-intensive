@@ -1,6 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {};
+const initialState = {
+  name: '',
+  todos: []
+};
 
 const addTodoReducer = createSlice({
   name: "todos",
